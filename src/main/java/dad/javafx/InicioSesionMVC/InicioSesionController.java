@@ -35,10 +35,10 @@ public class InicioSesionController {
 	}
 
 	private void onAccederAction(ActionEvent e) {
-		
+
 		String usuario = model.getUsuario();
 		String contraseña = model.getContraseña();
-		
+
 		if (!valido(usuario, contraseña)) {
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.setHeaderText("Acceso denegado");
